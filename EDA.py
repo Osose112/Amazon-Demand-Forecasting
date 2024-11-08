@@ -1,5 +1,8 @@
 # Distribution of 'Purchase' variable
+import numpy as np
 from matplotlib import pyplot as plt
+import seaborn as sns
+from statsmodels.sandbox.regression.sympy_diff import df
 
 plt.figure(figsize=(10, 6))
 sns.histplot(df['Purchase'], bins=30, kde=True)
